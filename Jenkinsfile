@@ -5,7 +5,7 @@ pipeline{
         maven "mvn"
     }
 
-    stages
+    stages{
         stage ("Pull code  from VCS repo"){
             steps{
                 script{
@@ -23,10 +23,12 @@ pipeline{
         stage("RUN SELENIUM TEST"){
             steps{
                 script{
-                    sh 'mvn clean test'
+                    sh 'mvn clean install'
                 }
             }
         }
 
-
+    }
 }
+
+
