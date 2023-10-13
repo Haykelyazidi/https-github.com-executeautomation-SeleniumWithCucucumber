@@ -9,7 +9,7 @@ pipeline{
         stage ("Pull code  from VCS repo"){
             steps{
                 script{
-                    git "https://github.com/Haykelyazidi/Gestion.git"
+                    git "https://github.com/Haykelyazidi/https-github.com-executeautomation-SeleniumWithCucucumber.git"
                 }
             }
         }
