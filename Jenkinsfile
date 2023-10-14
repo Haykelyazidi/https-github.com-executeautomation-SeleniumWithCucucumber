@@ -23,7 +23,7 @@ pipeline{
         stage("RUN SELENIUM TEST"){
             steps{
                 script{
-                    sh 'mvn clean install'
+                    sh 'mvn clean test'
                 }
             }
         }
